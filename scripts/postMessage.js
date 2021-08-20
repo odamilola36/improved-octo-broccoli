@@ -22,12 +22,8 @@ const options = {
 };
 
 
-submit.addEventListener("click", function(e){
+submit.addEventListener("submit", function(e){
     e.preventDefault();
-    title.innerHTML=""
-    nameC.innerHTML=""
-    email.innerHTML=""
-    message.innerHTML=""
     fetch('https://goresume-api.herokuapp.com/messages', options)
     .then(data => {
         console.log(data);
@@ -39,4 +35,13 @@ submit.addEventListener("click", function(e){
         }).then(update => {
         console.log(update);
     })
+
+    cleanup()
 })
+
+function cleanup(){
+    title.innerHTML=""
+    nameC.innerHTML=""
+    email.innerHTML=""
+    message.innerHTML=""
+}
