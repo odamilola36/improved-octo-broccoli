@@ -3,5 +3,5 @@ My resume site
 
 # Acknowledgement
 
-![ScreenShot](zuri.jpg)
+![Zuri](./images/zuri.png)
 Thanks to the Zuri/HNG/ING team for the opportunity , check them out [Here](https://zuri.team) 
